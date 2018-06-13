@@ -8,7 +8,6 @@ pipeline {
       steps {
         deleteDir()
         checkout scm
-        script {}
       }
     }
     stage('Build') {
@@ -60,10 +59,4 @@ pipeline {
       }
     }
   }
-}
-
-def commitChange(){
-  sh 'git add --all'
-  sh 'git commit -am RELEASE'
-  sh 'git push origin master'
 }
