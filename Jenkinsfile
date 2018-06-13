@@ -12,14 +12,14 @@ pipeline {
     }
     stage('Build') {
       steps {
-        script {
+        node {
           sh 'npm install'
         }
       }
     }
     stage('Integration Test Prod') {
       steps {
-        script {
+        node {
           sh 'npm version major'
         }
       }
