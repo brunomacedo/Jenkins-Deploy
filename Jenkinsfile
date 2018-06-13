@@ -13,48 +13,14 @@ pipeline {
     stage('Build') {
       steps {
         script {
-          echo 'Starting build...'
-          sh 'npm version major'
           sh 'npm install'
-          sh 'npm run build'
         }
-      }
-    }
-    stage('Config Context Development') {
-      steps {
-        script {}
-      }
-    }
-    stage('Docker Image') {
-      steps {
-        script {}
-      }
-    }
-    stage('Push Image to Portus') {
-      steps {
-        script {}
-      }
-    }
-    stage('Integration Test') {
-      steps {
-        script {}
-      }
-    }
-    stage('Config Context Production') {
-      steps {
-        script {}
-      }
-    }
-    stage('Delivery Production') {
-      steps {
-        script {}
       }
     }
     stage('Integration Test Prod') {
       steps {
         script {
-          echo 'Integration Test Prod'
-          sh 'npm test'
+          sh 'npm version major'
         }
       }
     }
