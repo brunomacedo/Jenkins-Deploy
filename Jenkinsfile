@@ -1,5 +1,5 @@
-def env_development = 'development'
 def env_production = 'production'
+def env_development = 'development'
 
 pipeline {
   agent any
