@@ -31,11 +31,11 @@ apt-get install -y nodejs
 ## Run container from Dockerfile
 
 ```prompt
-docker image build -t jenkins-deploy:1.0.0 .
+docker image build -t jenkins-deploy:1.0.3 .
 ```
 
 ```prompt
-docker container run -it jenkins-deploy:1.0.0
+docker container run -p 8080:8080 jenkins-deploy:1.0.3
 ```
 
 Configure it!
