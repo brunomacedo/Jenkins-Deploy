@@ -17,10 +17,10 @@ pipeline {
         }
       }
     }
-    stage('Integration Test Prod') {
+    stage('Unit Test') {
       steps {
         script {
-          sh 'npm version major'
+          sh 'npm test'
         }
       }
     }
