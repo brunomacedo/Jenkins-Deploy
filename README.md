@@ -39,3 +39,9 @@ docker container run -p 8080:8080 jenkins-deploy:1.0.4
 ```
 
 Configure it!
+
+## Get version from `package.json`
+
+```prompt
+cat package.json | grep version | head -1 | awk -F: '{ print $2 }' | sed 's/[",]//g'
+```
