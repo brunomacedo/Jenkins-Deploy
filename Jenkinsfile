@@ -35,8 +35,8 @@ def commitChanges(){
         echo "Nothing changes..."
     } else {
         echo "Commit changes..."
-        sh 'git add --all'
-        sh 'git commit -am RELEASE'
+        // sh 'git add --all'
+        // sh 'git commit -am RELEASE'
         // sh 'git push origin master'
     }
 }
