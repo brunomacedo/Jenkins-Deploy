@@ -1,13 +1,19 @@
+import { expect } from 'chai';
+
+const first = 1;
+const second = 2;
+const third = 3;
+
 describe('Jenkins Deploy Tests', () => {
   it('Should run test 1', () => {
-    console.log('1 test...');
+    expect(first).to.be.equal(1);
   });
 
   it('Should run test 2', () => {
-    console.log('2 test...');
+    expect(second).to.be.equal(2);
   });
 
   it('Should run test 3', () => {
-    console.log('3 test...');
+    expect(third).to.be.equal(3);
   });
 });
