@@ -1,7 +1,7 @@
 {
-  "name": "Jenkins-Deploy",
+  "name": "jenkins-deploy",
   "version": "1.0.1",
-  "description": "groovy",
+  "description": "Create my first pipeline Jenkins.",
   "main": "index.js",
   "scripts": {
     "mocha": "./node_modules/.bin/mocha specs/**/*.spec.js",
@@ -11,9 +11,15 @@
     "type": "git",
     "url": "git+https://github.com/brunomacedo/Jenkins-Deploy.git"
   },
-  "keywords": [],
+  "keywords": [
+    "groovy",
+    "yaml",
+    "jenkins",
+    "docker",
+    "pipeline"
+  ],
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/brunomacedo/Jenkins-Deploy/issues"
   },
