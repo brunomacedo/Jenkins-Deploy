@@ -1,7 +1,20 @@
 # Jenkinsfile
 
-```groovy
+Groovy file structure
 
+```groovy
+pipeline {
+  agent any
+  stages {
+    stage('Some title') {
+      steps {
+        script {
+          sh 'npm install'
+        }
+      }
+    }
+  }
+}
 ```
 
 ## Create container manually
