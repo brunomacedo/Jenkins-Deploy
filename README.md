@@ -43,7 +43,7 @@ docker image build -t jenkins-deploy:1.0.4 .
 ```
 
 ```prompt
-docker container run -p 8080:8080 jenkins-deploy:1.0.4
+docker container run -p 8080:8080 -p 5000:5000 jenkins-deploy:1.0.4
 ```
 
 Configure it!
