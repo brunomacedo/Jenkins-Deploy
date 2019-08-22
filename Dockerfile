@@ -1,4 +1,5 @@
 FROM jenkins
+# https://hub.docker.com/r/jenkins/jenkins/
 # FROM jenkins:alpine
 
 USER root
