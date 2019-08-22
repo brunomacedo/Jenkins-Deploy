@@ -1,4 +1,4 @@
-FROM jenkins
+FROM jenkins/jenkins
 # https://hub.docker.com/r/jenkins/jenkins/
 # FROM jenkins:alpine
 
